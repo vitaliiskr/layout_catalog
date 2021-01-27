@@ -1,14 +1,6 @@
 .catalog {
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 1024px;
-  padding: 0 40px;
-
-  &__product {
-    margin: 0 48px 50px 0;
-  }
-
-  & > :nth-child(4n) {
-    margin-right: 0;
-  }
+  display: grid;
+  grid-template-columns: repeat(4, 200px);
+  gap: 50px 48px;
+  justify-content: center;
 }
